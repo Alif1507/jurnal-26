@@ -13,7 +13,27 @@ Route::get('/', [welcomeController::class, 'index'])->name('welcome.index');
 Route::get("/photography", function() 
 {
     return view('photography');
-});
+})->name("foto");
+
+Route::get("/radio", function() 
+{
+    return view('radio');
+})->name("radio");
+
+Route::get("/website", function() 
+{
+    return view('website');
+})->name("website");
+
+Route::get("/editing", function() 
+{
+    return view('editing');
+})->name("editing");
+
+Route::get("/artikel", function() 
+{
+    return view('artikel');
+})->name("artikel");
 
 Route::resource('/news', NewsController::class);
 
