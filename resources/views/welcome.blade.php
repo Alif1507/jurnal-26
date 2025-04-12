@@ -1528,6 +1528,7 @@
     <x-navbar></x-navbar>
     <x-hero></x-hero>
     <x-datang></x-datang>
+    <x-divisi></x-divisi>
 </body>
 
 </html>
