@@ -19,47 +19,10 @@
             </style>
         @endif
     </head>
-    <body class="bg-[#011423] overflow-x-hidden">
+    <body class="bg-[#011423]">
         <x-navbar></x-navbar>
-        <div class="mt-32 mx-10">
-            {{ $posts->links() }}
-        </div>
-        <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 mt-24">
-            
-            @forelse ($posts as $post)
-                <a href="{{ route('news.show', $post->id) }}">
-                    <div class="w-full max-w-[362px] h-[316px] bg-white rounded-2xl relative mx-auto">
-                        @if ($post->image)
-                        <img class="w-full h-full object-cover rounded-2xl" src="{{ asset("storage/" . $post->image) }}" alt="">
-                        @else
-                        <img class="w-full h-full object-cover rounded-2xl" src="{{ asset('images/Logo Jurnalistik 2.svg') }}" alt="">  
-                        @endif
-                        <div class="bg-amber-500 w-full h-[126px] absolute bottom-0 left-0 rounded-b-2xl overflow-hidden">
-                            <div class="text-white ml-5 mt-2 flex flex-col gap-2">
-                                <h1 class="text-white font-medium text-xl">{{ $post->title }}</h1>
-                                <h1 class="text-[13px] font-light">{{ $post->user->name }}</h1>
-                            </div>
-                            <hr class="border-dashed my-2">
-                            <div class="ml-5 text-white flex items-center mt-3 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <h1>{{ $post->created_at }}</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                
-            @empty
-                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 col-span-full">
-                    <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 flex items-start justify-center">
-                        <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Artikel Sedang Di Tulis ✍️ 🔥╰(*°▽°*)╯</h1>
-                    </div>
-                </div>
-            @endforelse
-           
-        </main>
-        
-            </body>
+        <h1 class="mt-32">PHGOROEROIEJD</h1>
+       
+      
+    </body>
 </html>

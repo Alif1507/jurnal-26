@@ -1529,6 +1529,8 @@
     <x-hero></x-hero>
     <x-datang></x-datang>
     <x-divisi></x-divisi>
+    <x-projek></x-projek>
+    <x-footer></x-footer>
 </body>
 
 </html>
