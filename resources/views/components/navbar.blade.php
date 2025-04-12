@@ -1,4 +1,4 @@
-<nav class="flex justify-between items-center h-24 w-screen bg-[#003866]">
+<nav class="flex justify-between items-center h-24 w-screen bg-[#003866] fixed top-0 z-50">
     <div class="h-[70px] w-auto ml-16">
         <img class="w-full h-full object-cover" src="{{ asset('images/Logo Jurnalistik 2.svg') }}" alt="">
     </div>
