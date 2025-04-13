@@ -24,7 +24,7 @@
 
         @if ($post->image)
         <div class="h-64 w-full">
-          <img class="w-full h-full object-contain" src="{{ asset('storage/' .  $post->image) }}" alt="">
+          <img class="w-full h-full object-cover" src="{{ asset('storage/' .  $post->image) }}" alt="">
         </div>
         @else
         <div class="h-64 w-full">
@@ -44,7 +44,10 @@
           <h1 class="flex items-center text-5xl font-extrabold dark:text-white">{{ $post->title }}<span class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-2">{{ $post->user->name }}</span></h1>
 
 
-        <p class="mb-3  text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start mt-10 mx-10">{{ $post->body }}</p>
+          <div class="mb-3 text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:me-3 first-letter:float-start mt-10 mx-10">
+            {!! $post->body !!} 
+        </div>
+        
         </div>
         </div>
       

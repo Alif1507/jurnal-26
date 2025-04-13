@@ -20,7 +20,7 @@
                 <img src="{{ asset("storage/" . $data->image) }}" alt="Post Image" class="w-full h-full object-contain">
             </div>
 
-            <p class="my-4 text-lg text-gray-500">{{ $data->body }}</p>
+            <div class="my-4 text-lg text-gray-500">{!! $data->body !!}</div>
             <p>{{ $data->image }}</p>
 
 
