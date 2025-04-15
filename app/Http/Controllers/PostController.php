@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 use function Termwind\render;
 
@@ -14,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-       $data = Post::latest()->paginate(6);
+       $data = Post::where("user_id", auth()->id())->latest()->paginate(6);
         return view('Blog.index', compact("data"));
     }
 
@@ -58,6 +59,8 @@ class PostController extends Controller
     {
         $data = Post::find($id);
 
+        Gate::authorize("view", $data);
+
         return view("Blog.show", compact("data"));
 
     }
@@ -73,6 +76,9 @@ class PostController extends Controller
         if(!$data) {
             return to_route('post.index')->with("error", "Post Tidak ditemukan");
         }
+
+        Gate::authorize("update", $data);
+
 
         return view("Blog.edit", compact("data"));
         
@@ -94,6 +100,8 @@ class PostController extends Controller
         $imagePath = $request->file('image')->store('posts', 'public');
         $data['image'] =  $imagePath; // Store the correct path in the DB
     }
+
+
     
         $post->update($data);
     
@@ -106,6 +114,9 @@ class PostController extends Controller
     public function destroy($id)
     {   
         $data = Post::find($id);
+
+        Gate::authorize("delete", $data);
+
 
         Post::where("id", $data->id)->delete();
         return to_route('post.index')->with("success", "Post berhasil di hapus");   
