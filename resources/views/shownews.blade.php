@@ -21,21 +21,23 @@
     </head>
     <body class="bg-[#011423]">
         <x-navbar></x-navbar>
+         <a href="{{ route("news.index") }}" class="fixed bg-[#F09B0E] z-50 w-16 h-16 rounded-full flex items-center justify-center top-32 left-8">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-11 text-stone-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+    </a>
 
         @if ($post->image)
-        <div class="h-64 w-full">
+        <div class="h-96 w-full">
           <img class="w-full h-full object-cover" src="{{ asset('storage/' .  $post->image) }}" alt="">
         </div>
         @else
-        <div class="h-64 w-full">
-          <img class="w-full h-full object-contain" src="{{ asset('images/Logo Jurnalistik 2.svg') }}" alt="">
+        <div class="h-96 w-full">
+          <img class="w-full h-full object-cover" src="{{ asset('images/landing_img1_edit.png') }}" alt="">
         </div>
         @endif
-        <div class="bg-[#F09B0E] h-[66px] w-[66px] rounded-full justify-center ml-10 mt-10 items-center text-center flex hover:bg-white transition-all ease-in-out duration-200">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11  text-white fill-white hover:text-[#F09B0E] transition-all ease-in-out duration-200">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-        </svg>
-      </div>
+        
     <div class="inline-flex items-center justify-center w-full">
       
     <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded-sm dark:bg-gray-700">
@@ -56,6 +58,6 @@
         
         </div>
         </div>
-      
+      <x-footer></x-footer>
     </body>
 </html>

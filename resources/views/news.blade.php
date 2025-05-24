@@ -21,6 +21,7 @@
     </head>
     <body class="bg-[#011423] overflow-x-hidden">
         <x-navbar></x-navbar>
+        
         <div class="mt-32 mx-10">
             {{ $posts->links() }}
         </div>
