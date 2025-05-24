@@ -51,6 +51,8 @@
                 </a>
 
                 
+
+                
             @empty
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 col-span-full">
                     <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8 flex items-start justify-center">
@@ -60,6 +62,9 @@
             @endforelse
            
         </main>
-        
+        <div class="mt-32 mx-10">
+            {{ $posts->links() }}
+        </div>
+        <x-footer />
             </body>
 </html>
