@@ -1526,9 +1526,9 @@
 
 <body class="bg-[#011423]">
     <x-navbar></x-navbar>
-    <a href="{{ route("welcome.index") }}" class="fixed bg-[#F09B0E] z-50 w-16 h-16 rounded-full flex items-center justify-center top-32 left-8">
+    <a href="{{ route("welcome.index") }}" class="fixed hover:bg-white hover:text-[#F09B0E] text-stone-50 transition-all duration-100 hover:scale-110 bg-[#F09B0E] z-50 w-16 h-16 rounded-full flex items-center justify-center top-32 left-8">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-11 text-stone-50">
+            stroke="currentColor" class="size-11">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
         </svg>
     </a>

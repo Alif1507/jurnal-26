@@ -10,9 +10,13 @@ class NewsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::with("user")->latest()->paginate(6);
+        $query = $request->input('cari');
+
+        $posts = Post::query()->when($query, function ($q) use ($query) {
+            $q->where("title", "like", "%" . $query . "%" );
+        })->with("user")->latest()->paginate(6);
         return view('news', compact('posts'));
     }
 
