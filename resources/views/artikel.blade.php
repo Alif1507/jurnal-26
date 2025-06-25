@@ -1551,7 +1551,7 @@
             </div>
 
             <div class="mt-24 flex items-center justify-evenly bg-[#003866] py-6">
-                <h1 class="max-w-[797px] font-mons text-lg font-normal text-white max-md:text-center max-md:mx-10">
+                <h1 class="max-w-[797px] font-mons text-lg font-normal text-white max-md:text-center max-md:mx-10 max-md:text-lg">
                     <span class="text-6xl font-bold">D</span>ivisi Artikel Divisi artikel di ekstrakurikuler Jurnalistik SMKN 26 Jakarta menjadi wadah dari kreativitas dan informasi yang dihasilkan. Di sini, para siswa terlibat dalam penelitian mendalam, wawancara, dan penulisan untuk menghasilkan artikel-artikel yang informatif dan mendalam. Mereka tidak hanya menjadi penulis, tetapi juga pembawa suara bagi berbagai isu penting di sekolah dan masyarakat sekitar. Divisi ini menawarkan platform bagi para siswa untuk mengasah kemampuan menulis mereka serta memperluas wawasan tentang dunia jurnalisme modern
                 </h1>
                 <div class="h-[400px] max-w-[400px]">

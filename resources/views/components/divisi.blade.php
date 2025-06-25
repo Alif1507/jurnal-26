@@ -13,7 +13,7 @@
         <x-carddivisi aos="fade-up-left" image="images/Web-60.png" nomer="D3" title="Website" link="website"></x-carddivisi>
         <x-carddivisi aos="fade-down-right" image="images/editing-60.png" nomer="D4" title="Editing" link="editing"></x-carddivisi>
         <img data-aos="fade-up-down" class="block w-[270px] h-auto max-md:hidden" src="{{ asset("images/Logo Jurnalistik 2.svg") }}" alt="">
-        <x-carddivisi aos="fade-up-left" image="images/divisi/artikel/Copywritting-vs-content-writting-blog 1.png" nomer="D5" title="Artikel" link="artikel"></x-carddivisi>
+        <x-carddivisi aos="fade-up-left" image="images/Artikel-60.png" nomer="D5" title="Artikel" link="artikel"></x-carddivisi>
 
       </div>
     </div>

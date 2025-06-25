@@ -1,6 +1,6 @@
 @props(['image', 'title', 'nomer', 'link', 'aos'])
 
-<div class="block w-[270px]" data-aos="{{ $aos }}">
+<div class="block max-md:w-[200px] w-[270px]" data-aos="{{ $aos }}">
   <a class="block w-[270px] h-auto" href="{{ route("$link") }}">
     <img class="hover:-translate-y-8 transition-all duration-300 ease-in-out w-full h-auto" src="{{ asset($image) }}" alt="">
   </a>

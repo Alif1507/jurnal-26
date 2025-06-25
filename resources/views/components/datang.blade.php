@@ -6,7 +6,7 @@
   </div>
 
   <div class="bg-[#003866] flex justify-evenly items-center py-6 mt-24">
-    <h1 data-aos="fade-right" class="text-4xl font-mons text-white font-normal max-w-[797px] max-md:text-center max-md:mx-10">
+    <h1 data-aos="fade-right" class="text-4xl font-mons text-white font-normal max-w-[797px] max-md:text-lg max-md:text-center max-md:mx-10">
       <span class="font-bold text-6xl ">J</span>urnalistik adalah sebuah ekstrakurikuler di SMK Negeri 26 Jakarta yang bertujuan untuk mengembangkan minat dan bakat siswa dalam bidang Jurnalistik. Ekskul ini dirancang untuk memberikan siswa pengalaman praktis dan pengetahuan mendalam mengenai dunia Jurnalistik.
     </h1>
     <img class="max-md:hidden" data-aos="fade-left" src="{{ asset("images/image 1.png") }}" alt="">
